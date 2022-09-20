@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Captain is Dead: Color Selector</title>
+<style>
+html {
+	background-image: url("../images/Captain.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	}
+
+body {
+	padding: 250px;
+	text-align: center;
+	font-family: OCR A Std, monospace;
+}
+
+h1 {
+	text-align: center;
+	font-size: 75px;
+	width: auto;
+	color: white;
+	text-shadow: 7px 7px black;
+
+}
+
+button {
+	font-family: OCR A Std, monospace;
+	font-size: 20px;
+	padding: 20px;
+	margin: 20px;
+}
+
+button:active {
+	background-color: orchid;
+}
+
+textarea {
+	font-family: OCR A Std, monospace;
+	background-color: slategray;
+	height: 70px;
+	text-align: center;
+	overflow: hidden;
+
+
+
+	font-size: 40px;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+<h1>Select a Color!</h1>
+</header>
+<div>
+<button onclick = "selectColor()"><strong>Color</strong></button>
+</div>
+<div>
+<textarea id="color" disabled>
+
+</textarea>
+</div>
+
+<div>
+<button onclick = "reset()"><strong>Reset</strong></button>
+</div>
+
+<script>
+let colorsAvailable = ["Blue", "Orange", "Red", "Yellow", "Green", "Purple", "White",]
+let label = document.getElementById("color");
+
+
+function selectColor(){
+	let random = Math.floor(Math.random() * colorsAvailable.length);
+
+		if (colorsAvailable.length === 0) {
+				colorsAvailable = ["Blue", "Orange", "Red", "Yellow", "Green", "Purple", "White"];
+				label.style.color = 'White';
+				label.value = "Roles reset!";
+			} else {
+				label.style.color = colorsAvailable[random];
+				label.value = colorsAvailable[random];
+				colorsAvailable.splice(random, 1);
+			}
+}
+
+function reset() {
+	colorsAvailable = ["Blue", "Orange", "Red", "Yellow", "Green", "Purple", "White"];
+	label.value = "";
+}
+</script>
+</body>
+</html>

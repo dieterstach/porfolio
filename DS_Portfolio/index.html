@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dieter Stach's Coding Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!-- Styles -->
+    <style>
+    /*Document*/
+
+    html {
+      background-color: #f2f2f2;
+    }
+
+    /*Cover*/
+    .cover {
+      text-align: center;
+      background-image: url("Resources/images/LinkedIn.jpg");
+      background-size: cover;
+      overflow: hidden;
+      padding: 12.5rem 8rem;
+      margin: 0;
+    }
+
+    .cover h1 {
+      display: flex;
+      align-items: left;
+      margin: 0;
+    }
+
+    /*Skills*/
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      margin: auto;
+      background-color: #87CEEB;
+    }
+
+    .summary {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      opacity: .85;
+      width: 70%;
+      border-radius: 7px;
+      padding: 0 1rem;
+      margin-top: 2rem;
+    }
+
+    .languages {
+      opacity: .85;
+      padding: 0 10rem;
+      border-radius: 0 0 7px 7px;
+      margin-bottom: 2rem;
+    }
+
+    /*Projects*/
+
+    .projects {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .projects h1 {
+      padding: 2rem;
+    }
+
+    .sites {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .item {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 400px;
+      height: 380px;
+      margin: 5rem;
+    }
+
+    .item-img {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .item-img img{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .item-title {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-color: #FF991F;
+      padding: 0 1.5rem;
+      opacity: .9;
+    }
+
+    .item-title a{
+      color: #333333;
+      text-decoration: none;
+    }
+
+    /*About Me*/
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        background-color: skyblue;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-me-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-me img {
+      border-radius: 300px;
+        width: auto;
+        height: auto;
+        margin: 2rem 5rem;
+    }
+
+    .about-me-info {
+        width: 50rem;
+        margin: 0 5rem;
+    }
+
+
+    /*Footer*/
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f2f2f2;
+    }
+    </style>
+
+  </head>
+  <body>
+
+
+<!--Cover-->
+
+    <div class="cover jumbotron">
+      <h1>Dieter Stach's  <br>  Coding Portfolio</h1>
+    </div>
+
+
+<!--Skills-->
+
+    <div class="skills">
+      <div class="summary">
+        <h1>Summary of Skills</h1>
+        <p><em>I am an aspiring Front End Web Developer based in the Northern Virginia metroplex area. I have studied both personally and through Codecademy, where I earned my Credidation through their Intensive Program called "Build Websites from Scratch". I am proficient in utilizing HTML5, CSS3, and Bootstrap to build beautiful and fun websites. I am looking for opportunites to expand my knowledge and utilization of JavaScript, jQuery, and any variety of langueges and skills needed in the field of Web Development.</em></p>
+      </div>
+      <div class="languages">
+        <h2>Coding Languages & Tools</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Visual Basic</li>
+          <li>GitHub</li>
+          <li>React.js</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+<!--Projects-->
+
+    <div class="projects">
+      <h1>Projects</h1>
+      <div class="sites">
+        <div class="item">
+          <div class="item-img">
+            <a href="https://www.gracecov.org/chantilly/" target="_blank">
+              <img src="Resources/images/tidio.png" alt="Grace Covenant Logo"/>
+            </a>
+          </div>
+          <div class="item-title">
+            <a href="https://www.gracecov.org/chantilly/" target="_blank">
+              <h2>Grace Covenant ChatBot</h2>
+              <p>This is the main page of Grace Covenant Church. I designed and implemented the ChatBot, which is used to help navigate to common pages on the website.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-img">
+            <a href="Resources/site_files/ColorSelector.html" target="_blank">
+              <img src="Resources/images/Captain.jpg" alt="The Captain Is Dead">
+            </a>
+          </div>
+          <div class="item-title">
+            <a href="Resources/site_files/ColorSelector.html" target="_blank">
+             <h2>Color Selector</h2>
+             <p>This is a simple JavaScript program. The code randomizes, displays, then removes items from an array, and resets when the array is empty, or when reset is clicked.</p>
+           </a>
+          </div>
+        </div>
+
+
+        <div class="item">
+          <div class="item-img">
+            <a href="https://www.gracecov.org/leadwell/" target="_blank">
+              <img src="Resources/images/leadwell.webp" alt="Grace Covenant Logo"/>
+            </a>
+          </div>
+          <div class="item-title">
+            <a href="https://www.gracecov.org/leadwell/" target="_blank">
+              <h2>Grace Covenant Lead Well</h2>
+              <p>I designed the main body of this page, including the header image, the embedded video, and the responsive layout of the leader profiles at the bottom of the page</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-img">
+            <img src="Resources/images/colmar.jpg" alt="Coming Soon">
+          </div>
+          <div class="item-title">
+            <h2>Your Site, Coming Soon!</h2>
+            <p>Your website could be next to be featured in my portfolio, with your permission!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--About Me-->
+
+    <div class="about-me">
+        <div class="about-me-container">
+          <img src="./Resources/images/Dieter_Stach.jpg" alt="Dieter Stach">
+          <div class="about-me-info">
+            <h3>About Me</h3>
+            <p><em>I am a people oriented professional looking to make a difference and use my skills and knowledge to help wherever I can. I love to learn and try new things, and pick things up easily with hands on experience! I would be an excellent asset to your team not only for my knowledge and ability to learn quickly, but also for my positivity and easy-going personality.</em></p><span><a href="https://www.linkedin.com/in/dieter-stach/" target="_blank">Learn More</a></span>
+          </div>
+        </div>
+    </div>
+
+
+
+<!--Footer-->
+
+    <footer>
+      <span><a href=#>About Me</a></span>
+      <span>stach.dieter@gmail.com</span>
+      <span><a href="https://www.linkedin.com/in/dieter-stach/" target="_blank">LinkedIn</a></span>
+    </footer>
+  </body>
+</html>
